@@ -1,0 +1,116 @@
+@media screen and (max-width: 768px) {
+    .contenedor{
+        grid-template-columns: minmax(0,1fr);
+        grid-template-areas: "header"
+                             "menu"
+                             "contenido"
+                             "aside"
+                             "footer";
+    }
+    .header{
+        height: 300px;
+    }
+    .texto-slide h2{
+        font-size: 35px;
+    }
+    .texto-slide p{
+        font-size: 22px;
+    }
+    .menu{
+        padding: 12px 20px;
+        min-width: 0;
+    }
+    .menu-list{
+        display: grid;
+        grid-template-columns: repeat(4,minmax(0,1fr));
+        gap: 5px;
+    }
+    .menu-list a{
+        text-align: center;
+        padding: 10px 5px;
+    }
+    .contenido{
+        padding: 30px 25px;
+        min-width: 0;
+    }
+    .contenido h2{
+        font-size: 30px;
+    }
+    .tarjetas{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+    .servicios-grid{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+    .estadisticas{
+        grid-template-columns: minmax(0,1fr);
+    }
+    .aside{
+        display: grid;
+        grid-template-columns: repeat(3,minmax(0,1fr));
+        gap: 15px;
+        padding: 20px;
+    }
+    .footer h2{
+        font-size: 22px;
+    }
+    .footer p{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 488px) {
+    .contenedor{
+        grid-template-columns: minmax(0,1fr);
+    }
+    .header{
+        height: 280px;
+    }
+    .texto-slide{
+        width: 95%;
+        padding: 15px;
+    }
+    .texto-slide h2{
+        font-size: 26px;
+    }
+    .texto-slide p{
+        font-size: 18px;
+    }
+    .menu{
+        padding: 0;
+        background: linear-gradient(90deg, #3e2723, #6f4e37);
+    }
+    .hamburguesa{
+        display: grid;
+        padding: 15px 20px;
+    }
+    .menu-list{
+        display: none;
+        grid-template-columns: minmax(0,1fr);
+        background-color: #2b1810;
+    }
+    #menu-toggle:checked ~ .menu-list{
+        display: grid;
+    }
+    .menu-list li{
+        border-bottom: 1px solid rgba(212, 163, 115, 0.25);
+    }
+    .menu-list a{
+        padding: 13px;
+        text-align: center;
+    }
+    #menu-toggle:checked ~ .hamburguesa span:nth-child(1){
+        transform: translateY(6px) rotate(45deg);
+    }
+    #menu-toggle:checked ~ .hamburguesa span:nth-child(2){
+        opacity: 0;
+    }
+    #menu-toggle:checked ~ .hamburguesa span:nth-child(3){
+        transform: translateY(-6px) rotate(-45deg);
+    }
+    .tarjetas, .servicios-grid, .aside, .footer{
+        grid-template-columns: minmax(0,1fr);
+    }
+    .footer{
+        text-align: center;
+    }
+}

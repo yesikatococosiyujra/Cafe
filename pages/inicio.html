@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería-Artesanal</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <div class="carrusel">
+                <div class="slide slide1">
+                    <div class="texto-slide">
+                        <h2>AROMAS Y SABORES</h2>
+                        <p>Sistema de control de compras y ventas de cafetería.</p>
+                        <a href="ventas.html" class="boton">Ir a Ventas</a>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="texto-slide">
+                        <h2>PASTELERÍA FRESCA</h2>
+                        <p>Tortas y postres recién horneados.</p>
+                        <a href="compras.html" class="boton">Compra</a>
+                    </div>
+                </div>
+                <div class="slide slide3">
+                    <div class="texto-slide">
+                        <h2>CAFÉ </h2>
+                        <p>El mejor aroma y sabor en cada taza.</p>
+                        <a href="ventas.html" class="boton">Nueva Venta</a>
+                    </div>
+                </div>
+                <div class="slide slide4">
+                    <div class="texto-slide">
+                        <h2>CONTROL DE STOCK</h2>
+                        <p>Mira tus entradas y salidas fácilmente.</p>
+                        <a href="compras.html" class="boton">Ver Compras</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="menu-list">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="compras.html">Compras</a></li>
+                <li><a href="ventas.html">Ventas</a></li>
+                <li><a href="../index.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+
+        <main class="contenido">
+            <section class="introduccion">
+                <h2>Bienvenido al Sistema de Cafetería</h2>
+                <p>Puedes revisar nuestros productos principales, registrar compras a proveedores y realizar ventas a nuestros clientes.</p>
+            </section>
+
+            <section class="destinos">
+                <h2>Catálogo de Productos</h2>
+                <div class="tarjetas">
+                    <article class="tarjeta">
+                        <img src="../img/torta.jpg" alt="Torta de Chocolate">
+                        <div class="tajeta-contenido">
+                            <span class="categoria">CÓDIGO: P001</span>
+                            <h3>Torta de Chocolate</h3>
+                            <p>Porción de bizcocho húmedo con cobertura de cacao artesanal.</p>
+                            <ul>
+                                <li>Compra: Bs. 10</li>
+                                <li>Venta: Bs. 18</li>
+                            </ul>
+                            <p class="precio">Bs. 18</p>
+                            <a href="ventas.html" class="boton-card">Vender</a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="../img/cafe.jpg" alt="Café Capuchino">
+                        <div class="tajeta-contenido">
+                            <span class="categoria">CÓDIGO: P002</span>
+                            <h3>Café Capuchino</h3>
+                            <p>Espresso doble con leche vaporizada y espuma cremosa.</p>
+                            <ul>
+                                <li>Compra: Bs. 7</li>
+                                <li>Venta: Bs. 15</li>
+                            </ul>
+                            <p class="precio">Bs. 15</p>
+                            <a href="ventas.html" class="boton-card">Vender</a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="../img/empanada.jpg" alt="Empanada de Queso">
+                        <div class="tajeta-contenido">
+                            <span class="categoria">CÓDIGO: P003</span>
+                            <h3>Empanada de Queso</h3>
+                            <p>Masa hojaldrada al horno rellena de queso criollo.</p>
+                            <ul>
+                                <li>Compra: Bs. 4</li>
+                                <li>Venta: Bs. 8</li>
+                            </ul>
+                            <p class="precio">Bs. 8</p>
+                            <a href="ventas.html" class="boton-card">Vender</a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="../img/pie.jpg" alt="Pie de Limón">
+                        <div class="tajeta-contenido">
+                            <span class="categoria">CÓDIGO: P004</span>
+                            <h3>Pie de Limón</h3>
+                            <p>Base crocante con crema cítrica y merengue.</p>
+                            <ul>
+                                <li>Compra: Bs. 9</li>
+                                <li>Venta: Bs. 16</li>
+                            </ul>
+                            <p class="precio">Bs. 16</p>
+                            <a href="ventas.html" class="boton-card">Vender</a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="../img/jugo.jpg" alt="Jugo Natural">
+                        <div class="tajeta-contenido">
+                            <span class="categoria">CÓDIGO: P005</span>
+                            <h3>Jugo Natural</h3>
+                            <p>Vaso de 500ml de fruta fresca de temporada.</p>
+                            <ul>
+                                <li>Compra: Bs. 5</li>
+                                <li>Venta: Bs. 12</li>
+                            </ul>
+                            <p class="precio">Bs. 12</p>
+                            <a href="ventas.html" class="boton-card">Vender</a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="../img/cheesecake.jpg" alt="Cheesecake Frutilla">
+                        <div class="tajeta-contenido">
+                            <span class="categoria">CÓDIGO: P006</span>
+                            <h3>Cheesecake Frutilla</h3>
+                            <p>Postre frío de queso crema con jalea natural.</p>
+                            <ul>
+                                <li>Compra: Bs. 11</li>
+                                <li>Venta: Bs. 20</li>
+                            </ul>
+                            <p class="precio">Bs. 20</p>
+                            <a href="ventas.html" class="boton-card">Vender</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="servicios">
+                <h2>Módulos del Sistema</h2>
+                <div class="servicios-grid">
+                    <article>
+                        <div class="icono">📥</div>
+                        <h3>Compras</h3>
+                        <p>Registro de mercadería que ingresa de proveedores.</p>
+                    </article>
+                    <article>
+                        <div class="icono">🛒</div>
+                        <h3>Ventas</h3>
+                        <p>Atención rápida y cálculo de totales por cliente.</p>
+                    </article>
+                    <article>
+                        <div class="icono">🔎</div>
+                        <h3>Buscador</h3>
+                        <p>Búsqueda inmediata de productos por código.</p>
+                    </article>
+                    <article>
+                        <div class="icono">📊</div>
+                        <h3>Reportes</h3>
+                        <p>Tablas dinámicas con totales acumulados.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="nosotros">
+                <div>
+                    <h2>Sobre Aromas y Sabores</h2>
+                    <p class="texto-nosotros">Cafetería y pastelería dedicada a ofrecer productos frescos con un control ordenado de compras y ventas.</p>
+                </div>
+                <div class="estadisticas">
+                    <div><p class="numero">6</p><span>Productos</span></div>
+                    <div><p class="numero">100%</p><span>Fresco</span></div>
+                    <div><p class="numero">24/7</p><span>Online</span></div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="aside">
+            <div class="aside-card">
+                <h2>Promoción</h2>
+                <h3>Descuento</h3>
+                <p>Por compras de 5 o más unidades en ventas se aplica descuento.</p>
+                <div class="descuento">10% OFF</div>
+                <a href="ventas.html" class="boton">Ir a Ventas</a>
+            </div>
+            <hr>
+            <div class="aside-card">
+                <h2>Horarios</h2>
+                <p>Lunes a Sábado</p>
+                <p class="negrita">8:00 - 20:00</p>
+                <p>Atención continua.</p>
+            </div>
+            <hr>
+            <div class="aside-card">
+                <h2>Códigos</h2>
+                <p>P001 - Torta de Chocolate</p>
+                <p>P002 - Café Capuchino</p>
+                <p>P003 - Empanada de Queso</p>
+                <p>P004 - Pie de Limón</p>
+                <p>P005 - Jugo Natural</p>
+                <p>P006 - Cheesecake Frutilla</p>
+            </div>

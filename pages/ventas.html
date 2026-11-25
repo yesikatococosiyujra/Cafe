@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas Cafeteria-Artesanal</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <div class="carrusel">
+                <div class="slide slide3">
+                    <div class="texto-slide">
+                        <h2>MÓDULO DE VENTAS</h2>
+                        <p>Atención al cliente.</p>
+                        <a href="ventas.html" class="boton">Nueva Venta</a>
+                    </div>
+                </div>
+                <div class="slide slide1">
+                    <div class="texto-slide">
+                        <h2>CAFETERIA-ARTESANAL</h2>
+                        <p>Descuento del 10% llevando 5 o más unidades.</p>
+                        <a href="ventas.html" class="boton">Vender Ahora</a>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="texto-slide">
+                        <h2>CATALOGO</h2>
+                        <p>Revisa los precios y códigos disponibles.</p>
+                        <a href="inicio.html" class="boton">Ver Catálogo</a>
+                    </div>
+                </div>
+                <div class="slide slide4">
+                    <div class="texto-slide">
+                        <h2>COMPRAS</h2>
+                        <p>Registra mercadería de proveedores.</p>
+                        <a href="compras.html" class="boton">Ir a Compras</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="menu-list">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="compras.html">Compras</a></li>
+                <li><a href="ventas.html">Ventas</a></li>
+                <li><a href="../index.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+
+        <main class="contenido">
+            <section class="contacto">
+                <h2>Registro de Ventas</h2>
+                <p class="texto-contacto">Busca el producto</p>
+                
+                <form>
+                    <input type="text" id="cod_venta" placeholder="Código del producto (Ej: P001)">
+                    <button type="button" onclick="BuscarParaVenta()">Buscar Producto</button>
+                    <p id="msg_venta" class="texto-contacto"></p>
+
+                    <input type="text" id="prod_venta" placeholder="Producto seleccionado">
+                    <input type="number" id="precio_venta" placeholder="Precio de venta (Bs.)">
+                    
+                    <input type="text" id="nom_cliente" placeholder="Nombre del cliente">
+                    <input type="text" id="ap_cliente" placeholder="Apellido del cliente">
+                    <input type="text" id="ci_cliente" placeholder="C.I. del cliente">
+                    <input type="date" id="fecha_venta">
+
+                    <select id="tipo_pago">
+                        <option value="">Seleccione Forma de Pago</option>
+                        <option value="Efectivo">Efectivo</option>
+                        <option value="QR">QR</option>
+                        <option value="Tarjeta">Tarjeta</option>
+                    </select>
+
+                    <input type="number" id="cant_venta" placeholder="Cantidad a vender">
+
+                    <button type="button" onclick="RegistrarVenta()">Registrar Venta</button>
+                </form>
+
+                <div class="caja-tabla">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nro</th>
+                                <th>Código</th>
+                                <th>Cliente</th>
+                                <th>Fecha</th>
+                                <th>Pago</th>
+                                <th>Producto</th>
+                                <th>Cant.</th>
+                                <th>Precio Bs.</th>
+                                <th>Total Bs.</th>
+                            </tr>
+                        </thead>
+                        <tbody id="TablaVentas"></tbody>
+                    </table>
+                </div>
+                <h3 id="totalVentas" class="texto-contacto">Total Recaudado: Bs. 0</h3>
+            </section>
+        </main>
+
+        <aside class="aside">
+            <div class="aside-card">
+                <h2>Promoción</h2>
+                <p>Llevando 5 o más unidades se aplica automáticamente:</p>
+                <div class="descuento">10% OFF</div>
+            </div>
+            <hr>
+            <div class="aside-card">
+                <h2>Precios de Venta</h2>
+                <p>P001: Torta (Bs. 18)</p>
+                <p>P002: Capuchino (Bs. 15)</p>
+                <p>P003: Empanada (Bs. 8)</p>
+                <p>P004: Pie Limón (Bs. 16)</p>
+                <p>P005: Jugo (Bs. 12)</p>
+                <p>P006: Cheesecake (Bs. 20)</p>
+            </div>
+        </aside>
+
+        <footer class="footer">
+            <div>
+                <h2>Cafeteria-Artesanal</h2>
+                <p>Sistema Web de Compras y Ventas</p>
+            </div>
+            <div>
+                <h3>Páginas</h3>
+                <a href="inicio.html">Inicio</a>
+                <a href="compras.html">Compras</a>
+                <a href="ventas.html">Ventas</a>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                <a href="inicio.html">WhatsApp: 64175632</a>
+                <a href="inicio.html">cafetería@gmail.com</a>
+            </div>
+            <div class="copyright">
+                <p>©2026 Cafeteria-Artesanal. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
